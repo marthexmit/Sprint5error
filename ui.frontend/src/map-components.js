@@ -9,6 +9,7 @@ import TextComponent from './components/TextComponent/TextComponent'
 import Title from './components/Title/Title'
 import HeaderComponent from './components/HeaderComponent/HeaderComponent'
 import FooterComponent from './components/FooterComponent/FooterComponent'
+import Button from './components/Button/Button'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -28,6 +29,9 @@ const EditConfig = {
 /** *******************************************************************
               ↓  NEW COMPONENTS MAPPING COME HERE  ↓
 **********************************************************************/
+// Button Component
+MapTo('vue/components/button')(Button, EditConfig)
+
 // Footer Component
 MapTo('vue/components/footercomponent')(FooterComponent, EditConfig)
 
