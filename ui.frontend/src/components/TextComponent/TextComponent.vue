@@ -8,7 +8,7 @@ export default {
   props: {
     newtext: {
       type: String,
-      default: 'Texto'
+      default: ''
     }
   }
 }

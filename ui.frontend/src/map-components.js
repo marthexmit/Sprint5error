@@ -8,6 +8,7 @@ import MultifieldExampleComponent from './components/MultifieldExampleComponent/
 import TextComponent from './components/TextComponent/TextComponent'
 import Title from './components/Title/Title'
 import HeaderComponent from './components/HeaderComponent/HeaderComponent'
+import FooterComponent from './components/FooterComponent/FooterComponent'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -27,6 +28,9 @@ const EditConfig = {
 /** *******************************************************************
               ↓  NEW COMPONENTS MAPPING COME HERE  ↓
 **********************************************************************/
+// Footer Component
+MapTo('vue/components/footercomponent')(FooterComponent, EditConfig)
+
 // Header Component
 MapTo('vue/components/headercomponent')(HeaderComponent, EditConfig)
 
