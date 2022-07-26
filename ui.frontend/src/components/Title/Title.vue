@@ -16,11 +16,11 @@ export default {
   props: {
     type: {
       type: String,
-      default: 'h1'
+      default: ''
     },
     tMessage: {
       type: String,
-      default: 'testando'
+      default: ''
     }
   }
 }
