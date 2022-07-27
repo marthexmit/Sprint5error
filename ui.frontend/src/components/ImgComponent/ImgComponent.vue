@@ -1,5 +1,5 @@
 <template>
-  <img :src="src" />
+  <img id="iStyled" :src="src" />
 </template>
 
 <script>
@@ -13,5 +13,6 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import './ImgComponent.scss'
 </style>
