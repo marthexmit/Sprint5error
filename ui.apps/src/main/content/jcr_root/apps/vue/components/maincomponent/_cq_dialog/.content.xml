@@ -14,18 +14,23 @@
                     <Mtext
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Text Main"
+                        fieldLabel="Text"
                         name="./Mtext"/>
                     <Mtype
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Type Main"
+                        fieldLabel="Type Text"
                         name="./Mtype"/>
                     <Mtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Title Main"
+                        fieldLabel="Title Text"
                         name="./Mtitle"/>
+                    <Mbtext
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Button Text"
+                        name="./Mbtext"/>
                 </items>
             </column>
         </items>

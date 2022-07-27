@@ -7,8 +7,7 @@ export default {
   name: 'ButtonComponent',
   props: {
     Btext: {
-      type: String,
-      default: 'BACK TO HOME PAGE'
+      type: String
     }
   }
 }
