@@ -15,6 +15,10 @@
   <!-- AEM Base ClientLib -->
   <link rel="stylesheet" href="/etc.clientlibs/vue/clientlibs/clientlib-base.css" type="text/css" />
 
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
   <!-- In development mode, redirect from "/" to app root -->
   <script>
     if ('<%= NODE_ENV%>' === 'development' && location.pathname === '/' && '<%= VUE_APP_ROOT %>') {
@@ -26,7 +30,12 @@
   <link href="/js/app.js" rel="preload" as="script">
   <link href="/js/chunk-vendors.js" rel="preload" as="script">
 </head>
-
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+</style>
 <body class="page basicpage">
   <noscript>
     <strong>We're sorry but app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
