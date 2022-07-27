@@ -1,14 +1,39 @@
-#mStyleTitle{
-    font-family: monospace;
+main {
+    margin-top: 5em;
+}
+
+#mStyleTitle {
+    font-family: "Space Mono";
     font-weight: 700;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #333333;
 }
 #mStyleText {
     display: flex;
     flex-wrap: wrap;
     width: 70%;
-    font-family: monospace;
-    font-size: 1.4em;
-    color: #4F4F4F;
+    font-family: "Space Mono";
+    font-size: 1em;
+    color: #4f4f4f;
+}
+
+#bStyled {
+    width: 13.5em;
+    height: 4.25em;
+    background-color: #333333;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.8em;
+    color: #ffffff;
+    margin-top: 3em;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+#bStyled:hover {
+    background-color: #414141;
+    transition: 0.5s;
+    opacity: 1;
 }
