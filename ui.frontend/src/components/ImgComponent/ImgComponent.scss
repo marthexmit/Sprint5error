@@ -9,3 +9,11 @@ img {
     justify-content: center;
     max-width: 30vw;
 }
+
+@media (max-width: 768px)
+{
+    #iStyled {
+        max-width: 110%;
+        margin-top: 1.5em;
+    }
+}

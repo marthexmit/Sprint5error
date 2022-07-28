@@ -6,3 +6,20 @@
     margin-left: 2em;
     width: 98vw;
 }
+
+header {
+    height: 11vh;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px)
+{
+    #hStyled {
+        font-size: 0.5em;
+    }
+    header {
+        height: 7vh;
+        
+    }
+}

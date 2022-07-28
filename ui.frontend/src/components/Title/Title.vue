@@ -26,5 +26,6 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import './Title.scss'
 </style>
