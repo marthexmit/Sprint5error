@@ -1,9 +1,7 @@
 <template>
-    <div>
         <header>
-            <Title id="hStyled" :type="Htype" :tMessage="Htext" />
+            <Title id="hStyled" :type="Htype" :tMessage="Htext" :fontFamily="Hfont" :colorField="Hcolor" />
         </header>
-    </div>
 </template>
 
 <script>
@@ -20,6 +18,14 @@ export default {
     Htype: {
       type: String,
       default: 'h1'
+    },
+    Hfont: {
+      type: String,
+      default: 'Inconsolata'
+    },
+    Hcolor: {
+      type: String,
+      default: '#333333'
     }
   },
   components: { Title }
