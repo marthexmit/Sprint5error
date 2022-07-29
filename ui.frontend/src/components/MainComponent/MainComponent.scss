@@ -3,18 +3,14 @@ main {
 }
 
 #mStyleTitle {
-    font-family: "Space Mono";
     font-weight: 700;
     font-size: 1.5em;
-    color: #333333;
 }
 #mStyleText {
     display: flex;
     flex-wrap: wrap;
     width: 70%;
-    font-family: "Space Mono";
     font-size: 1em;
-    color: #4f4f4f;
     margin-top: 1.5em;
 }
 
@@ -22,11 +18,9 @@ main {
     width: 13.5em;
     height: 4.25em;
     background-color: #333333;
-    font-family: "Space Mono";
     font-style: normal;
     font-weight: 700;
     font-size: 0.8em;
-    color: #ffffff;
     margin-top: 3em;
     border: none;
     cursor: pointer;
