@@ -1,23 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-    jcr:primaryType="nt:unstructured"
-    jcr:title="Properties"
-    sling:resourceType="cq/gui/components/authoring/dialog">
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="nt:unstructured"
+    jcr:title="Compare Products Services" sling:resourceType="cq/gui/components/authoring/dialog"
+    mode="edit" helpPath="style-guide.html#compare-rows-services">
     <content
         jcr:primaryType="nt:unstructured"
-        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
         <items jcr:primaryType="nt:unstructured">
-            <column
+            <tab1
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="granite/ui/components/coral/foundation/container">
+                jcr:title="Footer Edit"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                    margin="{Boolean}false"/>
                 <items jcr:primaryType="nt:unstructured">
-                    <Ftext
+                    <column
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Text Footer"
-                        name="./Ftext"/>
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                           <Ftext
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Text Footer"
+                                name="./Ftext"/>
+                            <FcolorText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                                fieldLabel="Footer Text Color"
+                                name="./FcolorText"/>
+                            <FfontText cq-msm-lockable="./FfontText"
+                                defaultValue="FfontText"
+                                fieldLabel="Font-Family"
+                                jcr:primaryType="nt:unstructured"
+                                name="./FfontText"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                value="false">
+                                <items jcr:primaryType="nt:unstructured">
+                                <Montserrat jcr:primaryType="nt:unstructured" text="Montserrat" value="Montserrat"/>
+                                <SpaceMono jcr:primaryType="nt:unstructured" text="Space Mono" value="Space Mono"/>
+                                <Inconsolata jcr:primaryType="nt:unstructured" text="Inconsolata" value="Inconsolata"/>                       
+                        </items>
+                    </column>
                 </items>
-            </column>
+            </tab1>
         </items>
     </content>
 </jcr:root>

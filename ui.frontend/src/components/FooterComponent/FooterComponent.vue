@@ -1,5 +1,7 @@
 <template>
-    <TextComponent :newtext="Ftext" />
+  <footer>
+    <TextComponent id="fStyled" :newtext="Ftext" :fontFamilyText="FfontText" :colorFieldText="FcolorText"/>
+  </footer>
 </template>
 
 <script>
@@ -11,10 +13,20 @@ export default {
     Ftext: {
       type: String,
       default: 'created by Matheus Grigoleto - devChallenges.io'
+    },
+    FfontText: {
+      type: String,
+      default: 'Montserrat'
+    },
+    FcolorText: {
+      type: String,
+      default: '#BDBDBD'
     }
   }
 }
 </script>
 
-<style>
+<style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import './FooterComponent.scss'
 </style>

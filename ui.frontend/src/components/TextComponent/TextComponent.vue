@@ -1,5 +1,5 @@
 <template>
-  <p>{{ newtext }}</p>
+  <p :style="{ 'font-family': fontFamilyText, 'color': colorFieldText,}">{{ newtext }}</p>
 </template>
 
 <script>
@@ -7,12 +7,18 @@ export default {
   name: 'TextComponent',
   props: {
     newtext: {
-      type: String,
-      default: ''
+      type: String
+    },
+    fontFamilyText: {
+      type: String
+    },
+    colorFieldText: {
+      type: String
     }
   }
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import './TextComponent.scss'
 </style>

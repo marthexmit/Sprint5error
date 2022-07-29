@@ -1,12 +1,11 @@
 <template>
-    <div>
         <header>
-            <Title :type="Htype" :tMessage="Htext" />
+            <Title id="hStyled" :type="Htype" :tMessage="Htext" :fontFamily="Hfont" :colorField="Hcolor" />
         </header>
-    </div>
 </template>
 
 <script>
+
 import Title from '../Title/Title.vue'
 export default {
   // eslint-disable-next-line
@@ -14,16 +13,26 @@ export default {
   props: {
     Htext: {
       type: String,
-      default: '404 not found'
+      default: '404 NOT FOUND'
     },
     Htype: {
       type: String,
       default: 'h1'
+    },
+    Hfont: {
+      type: String,
+      default: 'Inconsolata'
+    },
+    Hcolor: {
+      type: String,
+      default: '#333333'
     }
   },
   components: { Title }
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import './HeaderComponent.scss'
 </style>

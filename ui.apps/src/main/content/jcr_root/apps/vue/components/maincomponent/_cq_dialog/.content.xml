@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="nt:unstructured"
+    jcr:title="Main properties" sling:resourceType="cq/gui/components/authoring/dialog"
+    mode="edit" helpPath="style-guide.html#compare-rows-services">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <tab1
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Title Edit"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                    margin="{Boolean}false"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <Mtype cq-msm-lockable="./Mtype"
+                                defaultValue="Mtype"
+                                fieldLabel="Type Title"
+                                jcr:primaryType="nt:unstructured"
+                                name="./Mtype"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                value="false">
+                                <items jcr:primaryType="nt:unstructured">
+                                <h1 jcr:primaryType="nt:unstructured" text="h1" value="h1"/>
+                                <h2 jcr:primaryType="nt:unstructured" text="h2" value="h2"/>
+                                <h3 jcr:primaryType="nt:unstructured" text="h3" value="h3"/>
+                                <h4 jcr:primaryType="nt:unstructured" text="h4" value="h4"/>
+                                <h5 jcr:primaryType="nt:unstructured" text="h5" value="h5"/>
+                                <h6 jcr:primaryType="nt:unstructured" text="h6" value="h6"/>
+                            <Mtitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Text Title"
+                                name="./Mtitle"/>
+                            <McolorTitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                                fieldLabel="ColorField"
+                                name="./McolorTitle"/>
+                            <MfontTitle cq-msm-lockable="./MfontTitle"
+                                defaultValue="MfontTitle"
+                                fieldLabel="Font-Family"
+                                jcr:primaryType="nt:unstructured"
+                                name="./MfontTitle"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                value="false">
+                                <items jcr:primaryType="nt:unstructured">
+                                <SpaceMono jcr:primaryType="nt:unstructured" text="Space Mono" value="Space Mono"/> 
+                                <Inconsolata jcr:primaryType="nt:unstructured" text="Inconsolata" value="Inconsolata"/>            
+                                <Montserrat jcr:primaryType="nt:unstructured" text="Montserrat" value="Montserrat"/>
+                        </items>
+                    </column>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Paragraph Edit"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                    margin="{Boolean}false"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <Mtext
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Text Paragraph"
+                                name="./Mtext"/>
+                            <McolorText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                                fieldLabel="ColorField"
+                                name="./McolorText"/>
+                            <MfontText cq-msm-lockable="./MfontText"
+                                defaultValue="MfontText"
+                                fieldLabel="Font-Family"
+                                jcr:primaryType="nt:unstructured"
+                                name="./MfontText"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                value="false">
+                                <items jcr:primaryType="nt:unstructured">
+                                <SpaceMono jcr:primaryType="nt:unstructured" text="Space Mono" value="Space Mono"/>
+                                <Inconsolata jcr:primaryType="nt:unstructured" text="Inconsolata" value="Inconsolata"/>
+                                <Montserrat jcr:primaryType="nt:unstructured" text="Montserrat" value="Montserrat"/>
+                        </items>
+                    </column>
+                </items>
+            </tab2>
+             <tab3
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Button Edit"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                    margin="{Boolean}false"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <Mbtext
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Text Button"
+                                name="./Mbtext"/>
+                            <MbBackcolor
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                                fieldLabel="Background Color"
+                                name="./MbBackcolor"/>
+                            <Mbcolor
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                                fieldLabel="Text Color"
+                                name="./Mbcolor"/>
+                            <Mbfont cq-msm-lockable="./Mbfont"
+                                defaultValue="Mbfont"
+                                fieldLabel="Font-Family"
+                                jcr:primaryType="nt:unstructured"
+                                name="./Mbfont"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                value="false">
+                                <items jcr:primaryType="nt:unstructured">
+                                <SpaceMono jcr:primaryType="nt:unstructured" text="Space Mono" value="Space Mono"/>
+                                <Inconsolata jcr:primaryType="nt:unstructured" text="Inconsolata" value="Inconsolata"/>
+                                <Montserrat jcr:primaryType="nt:unstructured" text="Montserrat" value="Montserrat"/>
+                            </tab3> 
+                        </items>
+                    </column>
+                </items>
+            </tab3>
+        </items>
+    </content>
+</jcr:root>
