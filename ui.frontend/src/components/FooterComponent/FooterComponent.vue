@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <TextComponent id="fStyled" :newtext="Ftext" />
+    <TextComponent id="fStyled" :newtext="Ftext" :fontFamilyText="FfontText" :colorFieldText="FcolorText"/>
   </footer>
 </template>
 
@@ -13,6 +13,14 @@ export default {
     Ftext: {
       type: String,
       default: 'created by Matheus Grigoleto - devChallenges.io'
+    },
+    FfontText: {
+      type: String,
+      default: 'Montserrat'
+    },
+    FcolorText: {
+      type: String,
+      default: '#BDBDBD'
     }
   }
 }
